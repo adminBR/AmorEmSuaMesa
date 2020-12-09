@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:background="#808"
+        android:background="#8080"
         android:id="@+id/botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
