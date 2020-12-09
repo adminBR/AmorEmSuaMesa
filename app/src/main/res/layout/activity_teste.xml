@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:foregroundTint="#FFFFFF"
+    android:touchscreenBlocksFocus="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="175dp"
+        android:layout_height="33dp"
+        android:autoText="false"
+        android:fontFamily="cursive"
+        android:text="Forma de souplast"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="145dp"
+        android:layout_height="169dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225"
+        app:srcCompat="@drawable/amor_em_sua_mesa" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="218dp"
+        android:layout_height="96dp"
+        android:fontFamily="cursive"
+        android:text="Feito em crochê                                                  Cor:rosa                        Tamanho 35cm                                          R$ 35,99"
+        android:textAlignment="center"
+        android:textColor="#E815CC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="210dp"
+        android:layout_height="27dp"
+        android:fontFamily="cursive"
+        android:text="  Descrição:"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="start" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F6C6F5"
+        android:text="Adicionar ao Carrinho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="237dp"
+        android:layout_height="57dp"
+        android:progressTint="#F83CFF"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:text="Avalie o produto!"
+        android:textColor="#9A0286"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="372dp"
+        android:layout_height="165dp"
+        android:layout_margin="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintVertical_bias="0.435">
+
+        <LinearLayout
+            android:layout_width="403dp"
+            android:layout_height="329dp"
+            android:layout_margin="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="364dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                 />
+
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Material bem feito"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Recomendo esse produto"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="Produto de qualidade, nota 10"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="comentário"
+                android:textAlignment="center"
+                android:textColor="#E815CC"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="cursive"
+        android:text="Comentários"
+        android:textColor="#9A0286"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#F6C6F5"
+        android:text="COMENTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="401dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361"
+        app:srcCompat="@drawable/amor_em_sua_mesa_logo_atualizado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
