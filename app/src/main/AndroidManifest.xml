@@ -11,6 +11,7 @@
         android:theme="@style/Theme.AmorEmSuaMesa">
         <activity android:name=".favoritos"></activity>
         <activity android:name=".teste" />
+        <activity android:name=".Carrinho"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

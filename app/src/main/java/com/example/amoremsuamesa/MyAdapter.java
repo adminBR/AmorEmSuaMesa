@@ -1,11 +1,13 @@
 package com.example.amoremsuamesa;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,6 +35,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         final ProductsClass item = itemsList.get(position);
         holder.name.setText(item.getName());
         holder.price.setText(String.valueOf(item.getPrice()));
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), teste.class);
+                intent.putExtra("FileName", ""+itemsList.get(position).getId());
+                v.getContext().startActivity(intent);
+                Toast toast = Toast.makeText(v.getContext(),""+position,Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
 
     }
 

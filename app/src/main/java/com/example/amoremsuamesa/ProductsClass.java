@@ -1,13 +1,26 @@
 package com.example.amoremsuamesa;
 
-public class ProductsClass {
+import android.widget.ImageView;
 
+public class ProductsClass {
+    //private ImageView productImage;
+    private int id;
     private String name;
     private String price;
 
-    ProductsClass(String mName,String mPrice){
+    ProductsClass(int ID, String mName,String mPrice){
+        this.id = ID;
         this.name = mName;
         this.price = mPrice;
+        //this.productImage = iv;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int ID) {
+        this.id = ID;
     }
 
     public String getPrice() {
@@ -25,5 +38,9 @@ public class ProductsClass {
     public void setName(String name) {
         this.name = name;
     }
+
+    //public ImageView getProductImage() {return productImage;}
+
+   // public void setProductImage(ImageView productImage) {this.productImage = productImage;}
 
 }

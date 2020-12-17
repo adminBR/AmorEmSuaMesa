@@ -1,6 +1,7 @@
 package com.example.amoremsuamesa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,20 +21,33 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rv;
     public ArrayList<ProductsClass> nomes = new ArrayList<>();
 
+    public Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        actionBarConfig();
         prepareItems();
         recViewConfig();
 
-        Button btn = (Button)findViewById(R.id.botao);
+
+        loadActivityButton((Button)findViewById(R.id.btnCarrinho),Carrinho.class);
+        loadActivityButton((Button)findViewById(R.id.botao),favoritos.class);
+    }
+
+    void loadActivityButton(Button btn,Class cls){
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, favoritos.class));
+                startActivity(new Intent(MainActivity.this,cls));
             }
         });
+    }
+
+    void actionBarConfig(){
+        toolbar = findViewById(R.id.mainActionBar);
+        setSupportActionBar(toolbar);
     }
 
     void recViewConfig(){
@@ -48,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void prepareItems(){
         for(int i = 0; i < 50; i++) {
-            ProductsClass items = new ProductsClass("Produto #"+i,"R$: "+20+i+",00");
+            ProductsClass items = new ProductsClass(i,"Produto #"+i,"R$: "+20+i+",00");
             nomes.add(items);
         }
     }

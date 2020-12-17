@@ -8,15 +8,16 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:background="#F6C6F5"
-        android:layout_height="60dp"/>
+    <include
+        layout="@layout/main_actionbar"/>
 
-    <Space
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Produtos Recomendados"
+        android:layout_margin="5dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"

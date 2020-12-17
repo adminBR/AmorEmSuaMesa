@@ -10,7 +10,7 @@
     android:backgroundTint="#FFFFFF"
     android:foregroundTint="#FFFFFF"
     android:touchscreenBlocksFocus="true"
-    tools:context=".MainActivity">
+    tools:context=".teste">
 
 
     <TextView
