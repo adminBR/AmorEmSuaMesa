@@ -14,7 +14,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/prod_nome"
         android:layout_width="175dp"
         android:layout_height="33dp"
         android:autoText="false"
@@ -75,7 +75,7 @@
         android:layout_gravity="start" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/prod_Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F6C6F5"
@@ -110,21 +110,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/prod_Btn" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="372dp"
+        android:layout_width="match_parent"
         android:layout_height="165dp"
         android:layout_margin="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
-        app:layout_constraintVertical_bias="0.435">
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.464">
 
         <LinearLayout
+            android:layout_gravity="center_horizontal"
             android:layout_width="403dp"
             android:layout_height="329dp"
             android:layout_margin="6dp"
@@ -133,312 +134,311 @@
             <TextView
                 android:layout_width="364dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginVertical="15dp"
+                android:layout_gravity="center_horizontal"
 
+                android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal"
-                 />
-
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Material bem feito"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Recomendo esse produto"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="Produto de qualidade, nota 10"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="93dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="cursive"
                 android:text="comentário"
                 android:textAlignment="center"
                 android:textColor="#E815CC"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="18sp" />
 
 
         </LinearLayout>
@@ -467,13 +467,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:layout_marginTop="64dp"
         android:backgroundTint="#F6C6F5"
         android:text="COMENTAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageView
         android:id="@+id/imageView9"

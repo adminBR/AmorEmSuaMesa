@@ -58,10 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void prepareItems(){
+        staticStorageClass.ListaCompletaProdutos.clear();
+        nomes.clear();
         for(int i = 0; i < 50; i++) {
-            ProductsClass items = new ProductsClass(i,"Produto #"+i,"R$: "+20+i+",00");
-            nomes.add(items);
+            ProductsClass items = new ProductsClass(i,"Produto #"+i,""+20+i);
+            staticStorageClass.ListaCompletaProdutos.add(items);
+
         }
+        nomes.addAll(staticStorageClass.ListaCompletaProdutos);
     }
 
     @Override

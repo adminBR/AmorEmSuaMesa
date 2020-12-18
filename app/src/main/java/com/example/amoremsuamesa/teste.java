@@ -15,8 +15,21 @@ public class teste extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teste);
 
-        RatingBar mBar = (RatingBar) findViewById(R.id.ratingBar);
+        //int selectedID = Integer.parseInt(getIntent().getStringExtra("product_id"));
 
+        //ProductsClass produto = staticStorageClass.ListaCompletaProdutos.get(selectedID);
+
+
+
+        findViewById(R.id.prod_Btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                staticStorageClass.carrinho.add(staticStorageClass.selectedProduct);
+                startActivity(new Intent(teste.this, MainActivity.class));
+            }
+        });
+
+        RatingBar mBar = (RatingBar) findViewById(R.id.ratingBar);
         findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -11,10 +11,11 @@
         android:theme="@style/Theme.AmorEmSuaMesa">
         <activity android:name=".favoritos" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
         <activity android:name=".teste" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
-        <activity android:name=".Carrinho"></activity>
+        <activity android:name=".Carrinho" android:label="Seu carrinho de compras"></activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar">
+            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar"
+            android:label="Amor em sua mesa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

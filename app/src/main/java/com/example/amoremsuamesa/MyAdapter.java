@@ -41,13 +41,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     public void onBindViewHolder(MyAdapter.MyViewHolder holder, final int position) {
         final ProductsClass item = itensList.get(position);
         holder.name.setText(item.getName());
-        holder.price.setText(String.valueOf(item.getPrice()));
+        holder.price.setText(String.valueOf("R$ "+item.getPrice()+",00"));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                staticStorageClass.selectedProduct = itensList.get(position);
                 Intent intent = new Intent(v.getContext(), teste.class);
-                intent.putExtra("FileName", ""+itensList.get(position).getId());
+                //intent.putExtra("product_id", ""+staticStorageClass.ListaCompletaProdutos.get(staticStorageClass.ListaCompletaProdutos.indexOf(itensList.get(position))));
                 v.getContext().startActivity(intent);
                 Toast toast = Toast.makeText(v.getContext(),""+position,Toast.LENGTH_SHORT);
                 toast.show();

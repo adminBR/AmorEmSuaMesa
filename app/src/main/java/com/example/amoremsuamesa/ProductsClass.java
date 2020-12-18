@@ -4,9 +4,9 @@ import android.widget.ImageView;
 
 public class ProductsClass {
     //private ImageView productImage;
-    private int id;
-    private String name;
-    private String price;
+    private int id = 0;
+    private String name = "";
+    private String price = "";
 
     ProductsClass(int ID, String mName,String mPrice){
         this.id = ID;
