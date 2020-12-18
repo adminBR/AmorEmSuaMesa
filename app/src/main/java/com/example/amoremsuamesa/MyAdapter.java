@@ -1,9 +1,12 @@
 package com.example.amoremsuamesa;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -12,15 +15,19 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> implements Filterable {
 
-    private List<ProductsClass> itemsList;
+    private List<ProductsClass> itensList;
+    private List<ProductsClass> itensListFull;
     //private ClickListener clickListener;
 
-    MyAdapter(List<ProductsClass> mItemList){
-        this.itemsList = mItemList;
+    MyAdapter(List<ProductsClass> mItemList, List<ProductsClass> mItemListFull){
+        this.itensList = mItemList;
+        this.itensListFull = mItemListFull;
     }
 
     @Override
@@ -32,7 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(MyAdapter.MyViewHolder holder, final int position) {
-        final ProductsClass item = itemsList.get(position);
+        final ProductsClass item = itensList.get(position);
         holder.name.setText(item.getName());
         holder.price.setText(String.valueOf(item.getPrice()));
 
@@ -40,7 +47,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), teste.class);
-                intent.putExtra("FileName", ""+itemsList.get(position).getId());
+                intent.putExtra("FileName", ""+itensList.get(position).getId());
                 v.getContext().startActivity(intent);
                 Toast toast = Toast.makeText(v.getContext(),""+position,Toast.LENGTH_SHORT);
                 toast.show();
@@ -52,9 +59,41 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-        return itemsList.size();
+        return itensList.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        return exampleFilter;
+    }
+
+    private Filter exampleFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<ProductsClass> filteredList = new ArrayList<>();
+            if(constraint == null || constraint.length() == 0){
+                filteredList.addAll(itensListFull);
+            }else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for( ProductsClass item : itensListFull){
+                    if(item.getName().toLowerCase().contains(filterPattern)){
+                        filteredList.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            itensList.clear();
+            itensList.addAll((List)results.values);
+            notifyDataSetChanged();
+        }
+    };
 
     class MyViewHolder extends RecyclerView.ViewHolder{
 

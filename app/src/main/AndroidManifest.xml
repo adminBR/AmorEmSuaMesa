@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmorEmSuaMesa">
-        <activity android:name=".favoritos"></activity>
-        <activity android:name=".teste" />
+        <activity android:name=".favoritos" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
+        <activity android:name=".teste" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
         <activity android:name=".Carrinho"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
