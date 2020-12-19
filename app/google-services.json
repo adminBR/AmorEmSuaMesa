@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127734101903",
+    "project_id": "amoremsuamesadb",
+    "storage_bucket": "amoremsuamesadb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127734101903:android:d4f606b17248334f01fdfa",
+        "android_client_info": {
+          "package_name": "com.example.amoremsuamesa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127734101903-a3he65hqpf2a5f50vgbpo5f0r672atn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcZaBAOJhwZPgPZM1CPunXTSvdzibiMb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127734101903-a3he65hqpf2a5f50vgbpo5f0r672atn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

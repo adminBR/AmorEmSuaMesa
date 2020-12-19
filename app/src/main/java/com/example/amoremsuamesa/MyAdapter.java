@@ -40,8 +40,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     @Override
     public void onBindViewHolder(MyAdapter.MyViewHolder holder, final int position) {
         final ProductsClass item = itensList.get(position);
-        holder.name.setText(item.getName());
-        holder.price.setText(String.valueOf("R$ "+item.getPrice()+",00"));
+        holder.name.setText(item.getNome());
+        holder.price.setText(String.valueOf("R$ "+item.getPreco()+",00"));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +78,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
                 String filterPattern = constraint.toString().toLowerCase().trim();
 
                 for( ProductsClass item : itensListFull){
-                    if(item.getName().toLowerCase().contains(filterPattern)){
+                    if(item.getNome().toLowerCase().contains(filterPattern)){
                         filteredList.add(item);
                     }
                 }

@@ -2,45 +2,78 @@ package com.example.amoremsuamesa;
 
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProductsClass {
     //private ImageView productImage;
+    private String dbID = "";
     private int id = 0;
     private String name = "";
+    private String descricao = "";
+    private List<String> imgUrl = new ArrayList<>();
     private String price = "";
 
-    ProductsClass(int ID, String mName,String mPrice){
+    ProductsClass(int ID, String mName,String mPrice){ //buttons construct
         this.id = ID;
         this.name = mName;
         this.price = mPrice;
-        //this.productImage = iv;
+    }
+    ProductsClass(String dId, int ID, String mName, String mDescricao, List<String> mImgUrl,String mPrice){ //buttons construct
+        this.dbID = dId;
+        this.id = ID;
+        this.name = mName;
+        this.descricao = mDescricao;
+        this.imgUrl = mImgUrl;
+        this.price = mPrice;
+    }
+
+
+    public String getDBID() {
+        return dbID;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int ID) {
-        this.id = ID;
+    public String getNome() {
+        return name;
     }
 
-    public String getPrice() {
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public List<String> getImages() {
+        return imgUrl;
+    }
+
+    public String getPreco() {
         return price;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
-    }
 
-    public String getName() {
-        return name;
+    public void setId(int ID) {
+        this.id = ID;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    //public ImageView getProductImage() {return productImage;}
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
 
-   // public void setProductImage(ImageView productImage) {this.productImage = productImage;}
+    public void setImages(List<String> imgs) {
+        this.imgUrl = imgs;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+
 
 }
