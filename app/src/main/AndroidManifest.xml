@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmorEmSuaMesa">
-        <activity android:name=".favoritos" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
-        <activity android:name=".teste" android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"/>
-        <activity android:name=".Carrinho" android:label="Seu carrinho de compras"></activity>
+        <activity android:name=".UsuarioActivity"></activity>
+        <activity
+            android:name=".favoritos"
+            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar" />
+        <activity
+            android:name=".teste"
+            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar" />
+        <activity
+            android:name=".Carrinho"
+            android:label="Seu carrinho de compras" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar"
-            android:label="Amor em sua mesa">
+            android:label="Amor em sua mesa"
+            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

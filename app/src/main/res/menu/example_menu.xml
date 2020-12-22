@@ -14,9 +14,10 @@
         app:showAsAction="always"
         app:actionViewClass="androidx.appcompat.widget.ButtonBarLayout"
         />
-    <item android:id = "@+id/cart"
-        android:icon="@drawable/ic_cart"
-        android:title="Cart"
+
+    <item android:id = "@+id/user"
+        android:icon="@drawable/ic_account"
+        android:title="user"
         app:showAsAction="always"
         app:actionViewClass="androidx.appcompat.widget.ButtonBarLayout"
         />

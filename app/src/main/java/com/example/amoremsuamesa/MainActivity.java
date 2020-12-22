@@ -48,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         downloadData();
         PreencherDB();
+
+
+        findViewById(R.id.fab_carrinho).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Carrinho.class));
+            }
+        });
     }
 
     void loadActivityButton(Button btn,Class cls){
@@ -167,11 +175,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.cart:
-                startActivity(new Intent(MainActivity.this,Carrinho.class));
-                return true;
+
             case R.id.favoritos:
                 startActivity(new Intent(MainActivity.this,favoritos.class));
+                return true;
+            case R.id.user:
+                startActivity(new Intent(MainActivity.this,UsuarioActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
