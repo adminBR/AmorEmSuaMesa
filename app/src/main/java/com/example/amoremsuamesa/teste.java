@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class teste extends AppCompatActivity {
@@ -15,13 +18,25 @@ public class teste extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teste);
 
-        //int selectedID = Integer.parseInt(getIntent().getStringExtra("product_id"));
-
-        //ProductsClass produto = staticStorageClass.ListaCompletaProdutos.get(selectedID);
+       
 
 
 
-        findViewById(R.id.prod_Btn).setOnClickListener(new View.OnClickListener() {
+
+            TextView prod_nome = findViewById(R.id.prod_nome);
+            prod_nome.setText(staticStorageClass.selectedProduct.getNome());
+
+
+
+            //TextView id_Preco = findViewById(R.id.id_Preco);
+            //id_Preco.setText(staticStorageClass.carrinho.get(i).getPreco());
+
+
+
+
+
+
+         findViewById(R.id.prod_Btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 staticStorageClass.carrinho.add(staticStorageClass.selectedProduct);

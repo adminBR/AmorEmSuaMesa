@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class favoritos extends AppCompatActivity {
 
@@ -20,16 +21,23 @@ public class favoritos extends AppCompatActivity {
 
         LayoutInflater inflater = LayoutInflater.from(this);
     //ESSA PARTE É SOMENTE PARA TESTAR OS PRODUTOS APARECENDO NA TELA
-        for (int i = 1; i == 200 || i < 200; i++) {
+        for (int i = 1; i == 50 || i < 50; i++) {
 
-            View view = inflater.inflate(R.layout.item, imagem_produto, false);
+            View view = inflater.inflate(R.layout.cart_item_layout, imagem_produto, false);
 
-            TextView textView = view.findViewById(R.id.text);
+            TextView textView = view.findViewById(R.id.cilName);
             textView.setText("PRODUTO " + i);
 
-            ImageView imageView = view.findViewById(R.id.imageView);
-            imageView.setImageResource(R.drawable.ic_launcher_foreground);
+            ImageView imageView = view.findViewById(R.id.cilImage);
+            imageView.setImageResource(R.drawable.amor_em_sua_mesa);
 
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "testanto 123", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            });
             imagem_produto.addView(view);
         }
     }

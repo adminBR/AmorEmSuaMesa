@@ -12,13 +12,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> implements Filterable {
 
     private List<ProductsClass> itensList;
@@ -43,10 +43,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         holder.name.setText(item.getNome());
         holder.price.setText(String.valueOf("R$ "+item.getPreco()+",00"));
 
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 staticStorageClass.selectedProduct = itensList.get(position);
+                //Intent intent = new Intent(v.getContext(), teste.class);
+
                 Intent intent = new Intent(v.getContext(), teste.class);
                 //intent.putExtra("product_id", ""+staticStorageClass.ListaCompletaProdutos.get(staticStorageClass.ListaCompletaProdutos.indexOf(itensList.get(position))));
                 v.getContext().startActivity(intent);
