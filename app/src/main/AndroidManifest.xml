@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmorEmSuaMesa">
-        <activity android:name=".UsuarioActivity"></activity>
+        <activity android:name=".comentarios"></activity>
+        <activity android:name=".UsuarioActivity" />
         <activity
             android:name=".favoritos"
             android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar" />
