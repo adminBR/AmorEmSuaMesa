@@ -6,11 +6,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/gradient_background"
     android:backgroundTint="#FFFFFF"
     android:foregroundTint="#FFFFFF"
+    android:scrollbarThumbHorizontal="@color/corDeBotao"
+    android:scrollbarThumbVertical="@color/corDeBotao"
     android:touchscreenBlocksFocus="true"
-    tools:context=".teste">
+    android:visibility="visible"
+    tools:context=".teste"
+    tools:visibility="visible">
 
 
     <TextView
@@ -94,8 +98,12 @@
         android:id="@+id/prod_Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F6C6F5"
+        android:background="@color/corDeBotao"
+        android:backgroundTint="@color/corDeBotao"
+        android:drawableTop="@drawable/gradient_background"
+        android:drawableEnd="@drawable/gradient_background"
         android:text="Adicionar ao Carrinho"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
@@ -108,7 +116,7 @@
         style="@style/Widget.AppCompat.RatingBar"
         android:layout_width="237dp"
         android:layout_height="57dp"
-        android:progressTint="#F83CFF"
+        android:progressTint="#91115D"
         android:verticalScrollbarPosition="right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
@@ -142,9 +150,9 @@
         app:layout_constraintVertical_bias="0.464">
 
         <LinearLayout
-            android:layout_gravity="center_horizontal"
             android:layout_width="403dp"
             android:layout_height="329dp"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="6dp"
             android:orientation="vertical">
 
@@ -484,8 +492,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:backgroundTint="#F6C6F5"
+        android:backgroundTint="@color/corDeBotao"
         android:text="COMENTAR"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
@@ -496,8 +505,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:backgroundTint="#F6C6F5"
+        android:backgroundTint="@color/corDeBotao"
         android:text="AVALIAR"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.916"
