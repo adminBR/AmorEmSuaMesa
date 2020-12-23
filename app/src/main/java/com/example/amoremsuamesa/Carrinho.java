@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -40,7 +41,8 @@ public class Carrinho extends AppCompatActivity {
             uni.setText("1 Un.");
             total+=Integer.parseInt(staticStorageClass.carrinho.get(i).getPreco());
             ImageView imageView = view.findViewById(R.id.cilImage);
-            imageView.setImageResource(R.drawable.ic_launcher_foreground);
+            new DownloadImageTask((ImageView) imageView,(RelativeLayout)view.findViewById(R.id.loadingPanel) ).execute(staticStorageClass.carrinho.get(i).getImages().get(0)); //baixar img
+
 
             int finali = i;
             view.findViewById(R.id.btnRemover).setOnClickListener(new View.OnClickListener() {

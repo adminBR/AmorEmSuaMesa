@@ -41,8 +41,7 @@
             android:id="@+id/recycleView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            />
+            android:scrollbars="vertical" />
 
         <Button
             android:id="@+id/btnTemp"

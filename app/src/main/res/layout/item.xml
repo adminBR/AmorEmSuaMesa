@@ -13,13 +13,12 @@
     app:layout_constraintTop_toTopOf="parent"
     tools:ignore="NamespaceTypo">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="158dp"
         app:srcCompat="@drawable/amor_em_sua_mesa"
-        tools:srcCompat="@drawable/amor_em_sua_mesa" />
+        tools:srcCompat="@drawable/amor_em_sua_mesa"/>
 
     <TextView
         android:id="@+id/text"
