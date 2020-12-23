@@ -42,7 +42,7 @@ public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
             bmImage.setVisibility(View.VISIBLE);
             loading.setVisibility(View.GONE);
         }
-
+        staticStorageClass.imagensMainActivity.add(result);
         bmImage.setImageBitmap(result);
     }
 

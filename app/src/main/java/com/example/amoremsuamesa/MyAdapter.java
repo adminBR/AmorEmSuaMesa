@@ -44,7 +44,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         final ProductsClass item = itensList.get(position);
         holder.name.setText(item.getNome());
         holder.price.setText(String.valueOf("R$ "+item.getPreco()+",00"));
-        new DownloadImageTask((ImageView) holder.img,(RelativeLayout)holder.itemLayout.findViewById(R.id.loadingPanel) ).execute(item.getImages().get(0)); //baixar img
+        if( staticStorageClass.imagensMainActivity.size()-1 > position){
+            holder.img.setImageBitmap(staticStorageClass.imagensMainActivity.get(position));
+            holder.itemLayout.findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+            holder.img.setVisibility(View.VISIBLE);
+        }else{
+            new DownloadImageTask((ImageView) holder.img,(RelativeLayout)holder.itemLayout.findViewById(R.id.loadingPanel) ).execute(item.getImages().get(0));
+        }
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
