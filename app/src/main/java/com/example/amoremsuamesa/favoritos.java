@@ -30,7 +30,7 @@ public class favoritos extends AppCompatActivity {
             textView.setText("PRODUTO " + i);
 
             ImageView imageView = view.findViewById(R.id.cilImage);
-            new DownloadImageTask((ImageView) imageView,(RelativeLayout)view.findViewById(R.id.loadingPanel) ).execute(staticStorageClass.carrinho.get(i).getImages().get(0));
+            new DownloadImageTask((ImageView) imageView,(RelativeLayout)view.findViewById(R.id.loadingPanel) ).execute(staticStorageClass.ListaCompletaProdutos.get(0).getImages().get(0));
 
             //ImageView imageView = view.findViewById(R.id.cilImage);
             //imageView.setImageResource(R.drawable.amor_em_sua_mesa);
