@@ -12,12 +12,16 @@ import java.io.InputStream;
 
 public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     ImageView bmImage;
-    RelativeLayout loading;
+    RelativeLayout loading = null;
 
 
     public DownloadImageTask(ImageView bmImage,RelativeLayout lB) {
         this.bmImage = bmImage;
         this.loading = lB;
+    }
+
+    public DownloadImageTask(ImageView bmImage) {
+        this.bmImage = bmImage;
     }
 
     protected Bitmap doInBackground(String... urls) {
@@ -34,8 +38,12 @@ public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     }
 
     protected void onPostExecute(Bitmap result) {
-        bmImage.setVisibility(View.VISIBLE);
-        loading.setVisibility(View.GONE);
+        if (loading!=null){
+            bmImage.setVisibility(View.VISIBLE);
+            loading.setVisibility(View.GONE);
+        }
+
         bmImage.setImageBitmap(result);
     }
+
 }

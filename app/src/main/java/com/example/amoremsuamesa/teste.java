@@ -3,7 +3,9 @@ package com.example.amoremsuamesa;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,8 @@ public class teste extends AppCompatActivity {
         TextView id_descricao = findViewById(R.id.id_descricao);
         id_descricao.setText(staticStorageClass.selectedProduct.getDescricao());
 
+        ImageView image_product = findViewById(R.id.imageButton4);
+        new DownloadImageTask((ImageView) image_product).execute("https://firebasestorage.googleapis.com/v0/b/amoremsuamesadb.appspot.com/o/img%232.jpg?alt=media&token=4b8c22a3-baf0-4366-ae13-5276f37ac1f6");
         //ImageView image_product = findViewById(R.id.imageButton4);
         //image_product.setImageResource(staticStorageClass.selectedProduct.getImages());
 

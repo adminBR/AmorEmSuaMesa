@@ -1,7 +1,5 @@
 package com.example.amoremsuamesa;
 
-import android.widget.ImageView;
-
 import java.util.ArrayList;
 import java.util.List;
 

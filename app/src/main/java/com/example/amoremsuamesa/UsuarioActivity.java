@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import java.util.zip.Inflater;
@@ -34,6 +35,15 @@ public class UsuarioActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 viewFlipper.setDisplayedChild(2);
+            }
+        });
+
+        viewFlipper.findViewById(R.id.btnEsqueceuSenha).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "PROBLEMA SEU", Toast.LENGTH_LONG);
+                toast.show();
+
             }
         });
 
