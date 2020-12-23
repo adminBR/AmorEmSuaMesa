@@ -30,7 +30,8 @@ public class teste extends AppCompatActivity {
         id_descricao.setText(staticStorageClass.selectedProduct.getDescricao());
 
         ImageView image_product = findViewById(R.id.imageButton4);
-        new DownloadImageTask((ImageView) image_product).execute("https://firebasestorage.googleapis.com/v0/b/amoremsuamesadb.appspot.com/o/img%232.jpg?alt=media&token=4b8c22a3-baf0-4366-ae13-5276f37ac1f6");
+        new DownloadImageTask((ImageView) image_product).execute(staticStorageClass.selectedProduct.getImages().get(0));
+
         //ImageView image_product = findViewById(R.id.imageButton4);
         //image_product.setImageResource(staticStorageClass.selectedProduct.getImages());
 

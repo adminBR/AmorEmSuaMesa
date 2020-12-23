@@ -21,6 +21,7 @@ public class favoritos extends AppCompatActivity {
         LinearLayout imagem_produto = findViewById(R.id.imagem_produto);
 
         LayoutInflater inflater = LayoutInflater.from(this);
+
     //ESSA PARTE É SOMENTE PARA TESTAR OS PRODUTOS APARECENDO NA TELA
         for (int i = 1; i == 5 || i < 5; i++) {
 
