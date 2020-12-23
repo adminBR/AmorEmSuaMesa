@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         final ProductsClass item = itensList.get(position);
         holder.name.setText(item.getNome());
         holder.price.setText(String.valueOf("R$ "+item.getPreco()+",00"));
+        new DownloadImageTask((ImageView) holder.img,(RelativeLayout)holder.itemLayout.findViewById(R.id.loadingPanel) ).execute(item.getImages().get(0)); //baixar img
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -102,10 +105,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     class MyViewHolder extends RecyclerView.ViewHolder{
 
         public TextView name,price;
+        public ImageView img;
         private LinearLayout itemLayout;
 
         public MyViewHolder(View itemView) {
             super(itemView);
+            img = itemView.findViewById(R.id.productImg);
             name = itemView.findViewById(R.id.tvName);
             price = itemView.findViewById(R.id.tvPrice);
             itemLayout =  itemView.findViewById(R.id.itemLayout);

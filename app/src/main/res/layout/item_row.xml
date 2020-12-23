@@ -4,19 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/itemLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="175dp"
     android:layout_margin="1dp"
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical"
     android:background="@drawable/rounded_corner">
 
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/productImg"
         android:background="#F5F5F5"
         android:layout_width="match_parent"
         android:layout_height="114dp"
-        app:srcCompat="@drawable/amor_em_sua_mesa" />
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/tvName"
