@@ -11,21 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmorEmSuaMesa">
-        <activity android:name=".comentarios"></activity>
-        <activity android:name=".UsuarioActivity" />
+        <activity android:name=".comentarios" android:screenOrientation="portrait"/>
+        <activity android:name=".UsuarioActivity" android:screenOrientation="portrait"/>
         <activity
             android:name=".favoritos"
-            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar" />
+            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".teste"
-            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar" />
+            android:theme="@style/Theme.AmorEmSuaMesa.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Carrinho"
-            android:label="Seu carrinho de compras" />
+            android:label="Seu carrinho de compras"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
             android:label="Amor em sua mesa"
-            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar">
+            android:theme="@style/Theme.AmorEmSuaMesa.DarkActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
