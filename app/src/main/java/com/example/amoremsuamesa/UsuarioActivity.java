@@ -26,7 +26,7 @@ public class UsuarioActivity extends AppCompatActivity {
 
 
 
-        viewFlipper.findViewById(R.id.btnCadastro).setOnClickListener(new View.OnClickListener() {
+        viewFlipper.findViewById(R.id.btnFazerCadastro).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 viewFlipper.setDisplayedChild(2);

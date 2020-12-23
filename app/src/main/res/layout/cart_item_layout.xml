@@ -8,7 +8,10 @@
     android:layout_margin="4dp"
     android:clickable="true"
     android:focusable="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner"
+    >
+
 
     <ImageView
         android:id="@+id/cilImage"
@@ -23,11 +26,11 @@
 
     <TextView
         android:id="@+id/cilName"
-        android:layout_width="214dp"
-        android:layout_height="22dp"
+        android:layout_width="169dp"
+        android:layout_height="26dp"
         android:padding="1dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#c75ac4"
+        android:textColor="@color/corDeBotao"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/cilImage"
@@ -36,29 +39,45 @@
 
     <TextView
         android:id="@+id/cilPreco"
-        android:layout_width="128dp"
-        android:layout_height="0dp"
-        android:padding="1dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#eb88e8"
-        android:textSize="24sp"
+        android:layout_width="103dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:gravity="center"
+        android:padding="1dp"
         android:text="R$000,00"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/corDeBotao"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
 
     <TextView
         android:id="@+id/cilUnidades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="60dp"
         android:text="TextView"
+        android:textColor="@color/corDeBotao"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cilPreco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRemover"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cilPreco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

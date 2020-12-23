@@ -5,10 +5,11 @@
     android:id="@+id/itemLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
+    android:layout_margin="1dp"
     android:clickable="true"
     android:focusable="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner">
 
     <ImageView
         android:id="@+id/productImg"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:padding="1dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#c75ac4"
+        android:textColor="@color/corDeBotao"
         android:textSize="15sp"
         android:textStyle="bold"
         tools:text="@tools:sample/full_names" />
@@ -34,7 +35,7 @@
         android:layout_height="wrap_content"
         android:padding="1dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#eb88e8"
+        android:textColor="@color/corDeBotao"
         android:textSize="13sp"
         tools:text="@tools:sample/full_names" />
 </LinearLayout>

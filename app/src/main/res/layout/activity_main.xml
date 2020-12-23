@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -38,8 +39,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleView"
-            android:layout_width="409dp"
-            android:layout_height="570dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scrollbars="vertical"
             />
 
